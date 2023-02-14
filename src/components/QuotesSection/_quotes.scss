@@ -1,0 +1,278 @@
+.quotes-block {
+  background: #F5F5F5;
+  width: 50%;
+
+  .quotes-wrapper {
+    padding: 101px 90px 50px 90px;
+    max-width: 960px;
+    float: right;
+  }
+
+  .quotes-above-header__line {
+    margin: 0 auto 18px auto;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+  }
+
+  .quotes__header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #2E3A59;
+    margin-bottom: 48px;
+  }
+
+
+  .quotes-quote-1 {
+    display: flex;
+    margin-bottom: 134px;
+    position: relative;
+  }
+
+  .quotes-quote-1__avatar {
+    width: 187px;
+    height: 187px;
+    margin-right: 14px;
+  }
+
+  .quotes-quote-1__mark-start-1 {
+    width: 19.5px;
+    height: 26px;
+    fill: #00C368;
+  }
+
+  .quotes-quote-1__mark-start-2 {
+    width: 19.5px;
+    height: 26px;
+    margin-right: 19px;
+    fill: #00C368;
+  }
+
+  .quotes-quote-1__phrase {
+    color: #2E3A59;
+    margin-bottom: 20px;
+  }
+
+  .quotes-quote-1__name {
+    color: #2E3A59;
+    font-weight: 900;
+  }
+
+  .quotes-quote-1__mark-end-1 {
+    position: absolute;
+    bottom: -10px;
+    right: 16px;
+
+    svg {
+      fill: #00C368;
+    }
+  }
+
+  .quotes-quote-1__mark-end-2 {
+    position: absolute;
+    bottom: -10px;
+    right: -5px;
+    fill: #00C368;
+  }
+
+  .quotes-quote-1__mark-start-1_mobile,
+  .quotes-quote-1__mark-start-2_mobile,
+  .quotes-quote-1__mark-end-1_mobile,
+  .quotes-quote-1__mark-end-2_mobile {
+    display: none;
+  }
+
+  .quotes-quote-2-3 {
+    display: flex;
+  }
+
+  .quotes-quote-2 {
+    width: 50%;
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .quotes-quote-2__content {
+    margin-right: 10px;
+  }
+
+  .quotes-quote-2__phrase {
+    color: #2E3A59;
+  }
+
+  .quotes-quote-2__name {
+    color: #2E3A59;
+    font-weight: 900;
+  }
+
+  .quotes-quote-2__avatar {
+    width: 97px;
+    height: 97px;
+  }
+
+  .quotes-quote-3 {
+    width: 50%;
+    display: flex;
+  }
+
+  .quotes-quote-3__avatar {
+    width: 97px;
+    height: 97px;
+    margin-right: 10px;
+  }
+
+  .quotes-quote-3__phrase {
+    color: #2E3A59;
+    margin-bottom: 15px;
+  }
+
+  .quotes-quote-3__name {
+    color: #2E3A59;
+    font-weight: 900;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .quotes-block {
+    .quotes-wrapper {
+      padding: 40px 20px 30px 20px;
+    }
+
+    .quotes-quote-1 {
+      margin-bottom: 44px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .quotes-block {
+    .quotes-quote-1__avatar {
+      width: 97px;
+      height: 97px;
+    }
+
+
+    .quotes-quote-2-3 {
+      flex-direction: column-reverse;
+    }
+
+    .quotes-quote-2 {
+      width: 100%;
+    }
+
+    .quotes-quote-3 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quotes-block {
+    width: 100%;
+
+    .quotes-wrapper {
+      padding: 27px 20px 20px 20px;
+    }
+
+    .quotes__header {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .quotes-quote-1 {
+      margin-bottom: 35px;
+    }
+
+    .quotes-quote-1__avatar {
+      position: absolute;
+      left: calc(50% - 49px);
+      top: -49px;
+    }
+
+    .quotes-quote-1__mark-start-1,
+    .quotes-quote-1__mark-start-2,
+    .quotes-quote-1__mark-end-1,
+    .quotes-quote-1__mark-end-2 {
+      display: none;
+    }
+
+    .quotes-quote-1__mark-start-1_mobile {
+      display: block;
+      position: absolute;
+      top: 24px;
+      left: 16px;
+    }
+
+    .quotes-quote-1__mark-start-2_mobile {
+      display: block;
+      position: absolute;
+      top: 24px;
+      left: 37px;
+    }
+
+    .quotes-quote-1__mark-end-1_mobile {
+      display: block;
+      position: absolute;
+      top: 24px;
+      right: 16px;
+    }
+
+    .quotes-quote-1__mark-end-2_mobile {
+      display: block;
+      position: absolute;
+      top: 24px;
+      right: 37px;
+    }
+
+    .quotes-quote-1__content {
+      background: #FFFFFF;
+      box-shadow: 0 8px 16px rgba(0, 195, 104, 0.24);
+      border-radius: 32px;
+    }
+
+    .quotes-quote-1__phrase {
+      margin: 80px 16px 20px 16px;
+      text-align: center;
+    }
+
+    .quotes-quote-1__name {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+
+    .quotes-quote-2-3 {
+      display: flex;
+    }
+
+    .quotes-quote-2 {
+      width: 100%;
+    }
+
+    .quotes-quote-2__phrase {
+      margin-bottom: 15px;
+    }
+
+    .quotes-quote-2__avatar {
+      width: 59px;
+      height: 59px;
+    }
+
+    .quotes-quote-3 {
+      width: 100%;
+    }
+
+    .quotes-quote-3__avatar {
+      width: 59px;
+      height: 59px;
+      margin-right: 15px;
+    }
+
+    .quotes-quote-3__phrase {
+      margin-bottom: 15px;
+    }
+  }
+}

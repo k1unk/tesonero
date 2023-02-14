@@ -1,0 +1,135 @@
+.header-block {
+  .header-wrapper {
+    max-width: 1790px;
+    margin: auto;
+    padding: 0 20px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo {
+    width: 304px;
+    height: 93px;
+    margin-right: 90px;
+  }
+
+  .header-menu__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-menu__item {
+    list-style: none;
+    margin-right: 90px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      a {
+        color: #00C368;
+        text-decoration: underline;
+      }
+    }
+
+    a {
+      color: #A6ABBD;
+      text-decoration: none;
+    }
+  }
+
+  .header-menu__item_selected {
+    height: 32px;
+
+    &:hover {
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+
+    a {
+      display: block;
+      background: #00C368;
+      box-shadow: 0 8px 16px rgba(0, 195, 104, 0.4);
+      border-radius: 8px;
+      padding: 4px 24px;
+      color: #FFFFFF;
+    }
+  }
+
+  .header-left {
+    display: flex;
+  }
+
+  .header__button {
+    border: none;
+    background: #00C368;
+    box-shadow: 0 8px 16px rgba(0, 195, 104, 0.4);
+    border-radius: 8px;
+    padding: 4px 20px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    &:hover {
+      background: #3ccc87;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header-block {
+    .header-wrapper {
+      height: 120px;
+    }
+
+    .header-menu__item {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header-block {
+
+    .header__logo {
+      width: 202px;
+      height: 61px;
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-block {
+
+    .header-wrapper {
+      height: 70px;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    .header__logo {
+      width: 202px;
+      height: 61px;
+      margin-right: 0;
+    }
+
+    .header-menu {
+      display: none;
+    }
+
+    .header-left {
+      display: none;
+    }
+  }
+}
